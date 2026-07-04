@@ -1,0 +1,13 @@
+{
+  "AREA_OR_POINT": "Area",
+  "long_name": "ERA5-Land daily stack over peatlands (NaN outside peat)",
+  "layout": "T,C,H,W via dims (time,band,y,x)",
+  "nodata_handling": "NoData/-9999 coerced to NaN",
+  "coordinates": "spatial_ref",
+  "_ARRAY_DIMENSIONS": [
+    "time",
+    "band",
+    "y",
+    "x"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "long_name": "Peatland mask (1=peatland valid, 0=non-peat)",
+  "dtype": "uint8",
+  "coordinates": "spatial_ref",
+  "_ARRAY_DIMENSIONS": [
+    "y",
+    "x"
+  ]
+}

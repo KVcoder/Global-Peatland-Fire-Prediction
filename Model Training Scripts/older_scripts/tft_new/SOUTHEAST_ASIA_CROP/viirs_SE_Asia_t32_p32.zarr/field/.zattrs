@@ -1,0 +1,13 @@
+{
+  "AREA_OR_POINT": "Area",
+  "long_name": "Daily stack (NaN outside peat; NaN on missing days)",
+  "layout": "T,C,H,W via dims (time,band,y,x)",
+  "nodata_handling": "NoData/-9999 coerced to NaN; missing days \u2192 all-NaN slice",
+  "coordinates": "spatial_ref",
+  "_ARRAY_DIMENSIONS": [
+    "time",
+    "band",
+    "y",
+    "x"
+  ]
+}

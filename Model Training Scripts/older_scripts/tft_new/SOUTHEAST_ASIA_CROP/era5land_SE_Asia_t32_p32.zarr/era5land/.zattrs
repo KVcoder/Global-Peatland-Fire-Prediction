@@ -1,0 +1,24 @@
+{
+  "src1_AREA_OR_POINT": "Area",
+  "src1_src1_AREA_OR_POINT": "Area",
+  "src1_src2_AREA_OR_POINT": "Area",
+  "src1__note": "nodata inherited from folder1",
+  "src2_AREA_OR_POINT": "Area",
+  "_note": "nodata inherited from folder1",
+  "AREA_OR_POINT": "Area",
+  "STATISTICS_MAXIMUM": 40.860000610352,
+  "STATISTICS_MEAN": 0.56059130353244,
+  "STATISTICS_MINIMUM": -18.370000839233,
+  "STATISTICS_STDDEV": 8.460566065419,
+  "STATISTICS_VALID_PERCENT": 1.781,
+  "long_name": "ERA5-Land daily stack over peatlands (NaN outside peat)",
+  "layout": "T,C,H,W via dims (time,band,y,x)",
+  "nodata_handling": "NoData/-9999 coerced to NaN",
+  "coordinates": "spatial_ref",
+  "_ARRAY_DIMENSIONS": [
+    "time",
+    "band",
+    "y",
+    "x"
+  ]
+}
