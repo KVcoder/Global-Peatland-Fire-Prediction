@@ -1,30 +1,3 @@
-#!/usr/bin/env python3
-"""
-Spatiotemporal Peat Ignition — XGBoost (per-pixel, multi-horizon) + GPU-first + Platt/Isotonic calibration
-
-FULL SCRIPT (updated with GPU-first fixes + STREAMING TRAINING + bugfixes)
-+ ADDITIONS requested:
-  ✅ (A) Streaming DataIter yields *larger* chunks by accumulating multiple chunk_rows per XGBoost `next()`
-      - New flag: --stream-accumulate-multiplier (default 3)
-  ✅ (B) Timing instrumentation for streaming DMatrix/QuantileDMatrix builds
-  ✅ (C) Optional QuantileDMatrix “precomputed sketch” ref reuse (train ref reused for val) to reduce extra sketching
-      - New flag: --xgb-quantile-precompute
-  ✅ (D) DataIter prints FINAL total emitted rows (per horizon, per DMatrix build) when exhausted
-  ✅ (E) Optional quick dataset row estimate (sample a few batches) to suggest chunk sizing
-      - New flags: --estimate-rows, --estimate-rows-batches
-
-Notes:
-- For fastest *streaming* builds, regular DMatrix is usually faster than QuantileDMatrix:
-    --xgb-dmatrix dmat
-  QuantileDMatrix can still be useful, but it may trigger multiple DataIter passes for sketching.
-- --stream-use-cupy can help keep streamed chunks on GPU for DMatrix construction (when supported), but
-  the dominant cost is often CPU tabularization + repeated DMatrix construction frequency.
-  
-
-  
-  
-"""
-
 from __future__ import annotations
 
 import argparse
